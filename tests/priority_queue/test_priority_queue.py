@@ -24,7 +24,3 @@ def test_basic_priority_queueing():
     with pytest.raises(IndexError):
         priority.search(100) is None
         priority.search(-1) is None
-
-
-
-
