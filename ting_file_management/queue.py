@@ -14,7 +14,7 @@ class Queue(AbstractQueue):
     def dequeue(self):
         if len(self.queue) == 0:
             return "Fila vazia"
-        return self.queue.pop(0)
+        return self.queue.pop()
 
     def search(self, index):
         if index in range(0, len(self.queue)):
@@ -23,6 +23,9 @@ class Queue(AbstractQueue):
 
     def size(self):
         return len(self._data)
+
+    def self(self):
+        return self.queue
 
     def empty(self):
         return len(self.queue) == 0
